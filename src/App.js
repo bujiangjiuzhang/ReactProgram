@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import './App.less';
 
 function App() {
   return (
-    <div className="App">
-     
+    <div className="container">
+     这是我的Demo
     </div>
   );
 }
