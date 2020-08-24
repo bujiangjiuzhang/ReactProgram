@@ -1,5 +1,5 @@
 ## 启动项目
-npm run dev
+npm start
 
 ## 配置less
 1.npm run eject将配置文件暴露出来；
