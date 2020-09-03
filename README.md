@@ -38,3 +38,12 @@ const lessModuleRegex = /\.module\.less$/;
               ),
           },
 4.添加less依赖：.yarn add less less-loader；
+
+## 配置路由
+
+
+## 使用ant design 
+问题：antd样式不生效
+处理：App.less全局引入antd的样式
+
+## hooks的使用
