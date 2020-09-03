@@ -81,7 +81,7 @@ class Heard extends Component {
     return (
       <div className="basicLayout">
         <div className="header">
-          <div className="logo">{details && details.name}</div>
+          <div className="logo">{details}</div>
 
           <div className="listMenu">{top}</div>
         </div>

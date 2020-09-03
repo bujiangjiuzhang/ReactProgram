@@ -7,9 +7,10 @@ import './App.less';
 
 class App extends Component {
   render(){
+    const details="我的Demo"
   return (
     <div>
-      <Heard {...this.props} />
+      <Heard {...this.props} details={details} />
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/hook" component={Hook} />
