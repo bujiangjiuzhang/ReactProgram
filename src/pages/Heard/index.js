@@ -5,12 +5,32 @@ import "./index.less";
 // const { Content } = Layout;
 
 const list = [
-  "Home",
-  "ReactHooks"
+  "React",
+  "Javascript",
+  "Css",
+  "ES6",
+  "小程序",
+  "浏览器",
+  "Graphql",
+  "ant design",
+  "JSON",
+  "Echarts",
+  "Bizcharts",
+  "React Hooks",
 ];
 
 const url = [
   "/home",
+  "/javascript",
+  "css",
+  "es6",
+  "miniProgram",
+  "browser",
+  "graphql",
+  "antDesign",
+  "json",
+  "echarts",
+  "bizcharts",
   "/hook"
 ];
 
