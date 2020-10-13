@@ -17,21 +17,23 @@ const list = [
   "Echarts",
   "Bizcharts",
   "React Hooks",
+  '虚拟列表'
 ];
 
 const url = [
   "/home",
   "/javascript",
-  "css",
-  "es6",
-  "miniProgram",
-  "browser",
-  "graphql",
-  "antDesign",
-  "json",
-  "echarts",
-  "bizcharts",
-  "/hook"
+  "/css",
+  "/es6",
+  "/miniProgram",
+  "/browser",
+  "/graphql",
+  "/antDesign",
+  "/json",
+  "/echarts",
+  "/bizcharts",
+  "/hook",
+  "/vitialList"
 ];
 
 
@@ -39,8 +41,10 @@ const url = [
 class Heard extends Component {
   constructor(props) {
     super(props);
+    const { history:{location:{pathname}}}=this.props;
+    const currentIndex=url.indexOf(pathname)
     this.state = {
-      current: 0,
+      current: currentIndex,
       indexClick: null,
       showMenu: false
     };
@@ -54,7 +58,6 @@ class Heard extends Component {
 
   handleClick = index => {
     const { history } = this.props;
-    console.log(history,this.props)
     if (history) {
       history.push(url[index]);
       this.setState({
