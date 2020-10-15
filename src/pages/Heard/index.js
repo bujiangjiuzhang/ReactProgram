@@ -17,7 +17,8 @@ const list = [
   "Echarts",
   "Bizcharts",
   "React Hooks",
-  '虚拟列表'
+  '虚拟列表',
+  'VitialListTable'
 ];
 
 const url = [
@@ -33,7 +34,8 @@ const url = [
   "/echarts",
   "/bizcharts",
   "/hook",
-  "/vitialList"
+  "/vitialList",
+  '/VitialListTable'
 ];
 
 

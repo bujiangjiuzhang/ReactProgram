@@ -56,9 +56,9 @@ import "./index.less";
   handleScroll (e) {
     if (!this.doc) {
       // 兼容 iOS Safari/Webview
+      // window.document.body.scrollTop:网页被卷去的高(没有超过屏幕的部分)
       this.doc = window.document.body.scrollTop ? window.document.body : window.document.documentElement
     }
-
     const scrollTop = this.doc.scrollTop
     if (scrollTop > this.scrollTop) {
       if (scrollTop > this.anchorItem.bottom) {
@@ -80,7 +80,6 @@ import "./index.less";
     scrollTop = scrollTop || 0
     // 用户正常滚动下，根据 scrollTop 找到新的锚点元素位置
     const anchorItem = this.cache.find(item => item.bottom >= scrollTop)
-
     if (!anchorItem) {
       // 滚的太快，找不到锚点元素，这个暂不处理
       return
@@ -109,7 +108,6 @@ import "./index.less";
     this.visibleCount = Math.ceil(window.innerHeight / height) + bufferSize
     this.endIndex = this.startIndex + this.visibleCount
     this.updateVisibleData()
-
     window.addEventListener('scroll', this.handleScroll, false)
   }
 
